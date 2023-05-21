@@ -1,0 +1,11 @@
+.image-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.clickable-image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    cursor: pointer;
+}
