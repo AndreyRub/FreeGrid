@@ -13,8 +13,8 @@
 
     img {
         vertical-align: middle;
-        /* max-height: 700px;
-        width: auto; */
+        width:100%;
+        max-height:min(600px, 90vh);
         object-fit: contain;
     }
 
