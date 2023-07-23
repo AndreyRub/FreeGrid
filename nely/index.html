@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">(1/6)</div>
+            <img src="images/ball.png" onclick="playSound('ball')">
+            <div class="text">כדור</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">(2/6)</div>
+            <img src="images/books.png"  onclick="playSound('books')">
+            <div class="text">בננה</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">(3/6)</div>
+            <img src="images/cubes.png"  onclick="playSound('cubes')">
+            <div class="text">מים</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="drum">(4/6)</div>
+            <img src="images/drum.jpg"  onclick="playSound('drum')">
+            <div class="text">דניאלה</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">(5/6)</div>
+            <img src="images/game1.png"  onclick="playSound('game')">
+            <div class="text">לחם</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">(6/6)</div>
+            <img src="images/guitar.png"  onclick="playSound('guitar')">
+            <div class="text">אמבטיה</div>
+        </div>           
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <audio id="ball" src="sounds/ball.mp3"></audio>
+    <audio id="books" src="sounds/books.mp3"></audio>
+    <audio id="cubes" src="sounds/cubes.mp3"></audio>
+    <audio id="drum" src="sounds/drum.mp3"></audio>
+    <audio id="game" src="sounds/game.mp3"></audio>
+    <audio id="guitar" src="sounds/guitar.mp3"></audio>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
